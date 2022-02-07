@@ -1,0 +1,38 @@
+.container{
+    border: none;
+    
+}
+#header .xyz{
+    color:   yellow;
+}
+/* #header{
+    background: red;
+} */
+#navbar{
+    background:purple;
+}
+#sidenave{
+    background: gray;
+}
+#footer{
+    background:red;
+    text-align: right;
+    color: white;
+}
+a{
+    color:black;
+}
+h1{
+    color: white;
+}
+
+.abc
+{
+    background-color:red;
+}
+
+.wxy
+{
+    background-color: aqua;
+}
+

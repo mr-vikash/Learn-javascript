@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript</title>
+    <script>
+        var a = {
+            fname: "Vikash",
+            lname: "Gupta",
+            age: 25,
+            email: '@yahoobaba.net',
+            favMovies : ['Dhoom','Sholay','Hum'],
+            Salary : function(){
+                return 25000;
+            },
+            fullname : function()
+            {
+                return this.fname + " " + this.lname;
+            },
+            living : {
+                city : "chndigarh",
+                country : "India"
+            }
+        }
+        document.write(a.living.city);
+
+        console.log(a);
+    //console.log(a.fname);
+
+
+        // var a = {
+        //     fname : "Vikash",
+        //     lname :  "Gupta",
+        //     age   : 25,
+        //     email : '@yahoobaba.net'
+        // }
+        // document.write(a.age);
+
+        // console.log(a);
+        // //console.log(a.fname);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="submitFunction()">
+        <label for="">Name:</label><input type="text" id="fname" oninvalid="alert('please fill the first name')" onselect="selectFunction()" onfocus="focusFunction(this)" onblur="blurFunction(this)" onchange="changeFunction(this)" oninput="oninputFunction(this) "required><br>
+        <label for="">Class:</label><input type="text"  id="" onfocus="focusFunction(this)" onblur="blurFunction(this)"><input type="text"  id="" onfocus="focusFunction(this)" onblur="blurFunction(this)"><br>
+        <label for="">country</label>
+        <select name="" id="" onfocus="focusFunction(this)" onblur="blurFunction(this)" onchange="changeFunction(this)">
+            <option value="India">INDIA</option>
+            <option value="Australia">AUSTRALIA</option>
+            <option value="America">AMERICA</option>
+            <option value="England">ENGLAND</option>
+        </select>
+        <input type="submit" id="" onfocus="focusFunction(this)" onblur="blurFunction(this)">
+        <br>
+    </form>
+    <div id="test" style="border:2px solid cyan"></div>
+    <script>
+        function focusFunction(element){
+                // document.getElementById("fname").style.background = "red";
+                element.style.background = "cyan";
+            }
+            function blurFunction(element) {
+                    // document.getElementById("fname").style.background = "red";
+                    element.style.background = "";
+                }
+
+            function oninputFunction(element)
+            {
+                var x = element.value;
+                document.getElementById("test").innerHTML = x;
+
+            }
+            function changeFunction(element)
+            {
+                 var x = element.value;
+                 document.getElementById("test").innerHTML = x;
+            }
+            function selectFunction()
+            {
+                console.log("you are  selected some text");
+            }
+            function submitFunction()
+            { 
+                var x = document.getElementById("fname").value;
+                // alert("you submitted form");
+                 alert("Hello"+x);
+            }
+    </script>
+</body>
+</html>
